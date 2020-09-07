@@ -1,7 +1,7 @@
 bases:
 - ../../../deploy-config/default
 - ../../../pattern-config/dev
-- ../../../deploy-config/hpa
+- ../../../deploy-config/ingress
 commonLabels:
   app: ms01
   biz: project01
@@ -16,7 +16,7 @@ images:
 - name: cloudsvcdev/microservice
   newName: vup-registry.cloudzcp.io/modern/example/ms01
   newTag: 0.0.1
-namePrefix: ms01-
+namePrefix: msa-project01-
 nameSuffix: -ms01
 patchesJson6902:
 - path: service-patch.yaml
@@ -29,5 +29,5 @@ patchesStrategicMerge:
 - imagepolicy-patch.yaml
 - probe-patch.yaml
 - spec-patch.yaml
-- hpa-patch.yaml
 - pod-lifecycle-patch.yaml
+- ingress-patch.yaml
