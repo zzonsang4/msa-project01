@@ -3,7 +3,7 @@ bases:
 - ../../../pattern-config/dev
 - ../../../deploy-config/ingress
 commonLabels:
-  app: ms01
+  app: ms011
   biz: project01
 configMapGenerator:
 - literals:
