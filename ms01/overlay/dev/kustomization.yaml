@@ -31,4 +31,3 @@ patchesStrategicMerge:
 - spec-patch.yaml
 - pod-lifecycle-patch.yaml
 - ingress-patch.yaml
-- test.yaml
